@@ -3,14 +3,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../../assets/Artem.png';
-import Image from 'react-bootstrap/Image'
-import Button from 'react-bootstrap/Button';
+import { LoginButton, SignUpButton, ArtemLogo } from './Header.styled';
 
 function Header() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Image src={logo} width={40} style={{marginLeft: '15px', marginRight: '15px'}}/>
+        <ArtemLogo src={logo} width={40}/>
         <Navbar.Brand href="/">Artem</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -30,8 +29,8 @@ function Header() {
             </NavDropdown>
           </Nav>
           <Nav className="ms-auto">
-            <Button variant="outline-success" style={{marginRight: '10px'}}>Login</Button>
-            <Button variant="outline-success">Sign Up</Button>
+            <LoginButton variant="outline-success">Login</LoginButton>
+            <SignUpButton variant="outline-success">Sign Up</SignUpButton>
           </Nav>
         </Navbar.Collapse>
       </Container>
