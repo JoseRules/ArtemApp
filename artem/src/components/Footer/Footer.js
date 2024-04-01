@@ -1,11 +1,11 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
+import { StyledContainer } from './Footer.styled';
 
 const Footer = () => {
   return (
-    <Navbar bg="light" fixed='bottom'>
-      <Container>
+    <Navbar bg="light" fixed='sticky-bottom'>
+      <StyledContainer>
       <Nav>
         <Nav.Link href="/">How to make an appointment</Nav.Link>
       </Nav>
@@ -21,7 +21,7 @@ const Footer = () => {
       <Nav>
         <Nav.Link href="/">Did you find an error?</Nav.Link>
       </Nav>
-      </Container>
+      </StyledContainer>
     </Navbar>
   )
 }
