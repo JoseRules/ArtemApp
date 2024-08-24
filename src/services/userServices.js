@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const artemAPIURL = 'http://18.206.196.74';
+const artemAPIURL = 'https://18.206.196.74';
 
 export const registerDoctor = (user) => {
     return axios.post(`${artemAPIURL}/doctors`, user);
