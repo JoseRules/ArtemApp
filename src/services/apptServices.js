@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const artemAPIURL = 'http://184.73.150.133:8080';
+const artemAPIURL = 'http://174.129.58.91:8080';
 
 export const getApptsByDoctor = (doctorId, date) => {
     return axios.post(`${artemAPIURL}/appointmentsByDoctor`, {
